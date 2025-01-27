@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+HR+Lijeva&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#main {
+    background-color: black;
+    position: relative;
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 11;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    z-index: 20;
+    background-color: cyan;
+    position: fixed;
+    top: 0%;
+    left: 2%;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.3s;
+    background-position: center;
+    background-size: cover;
+}
+
+.manu-bar {
+    display: none;
+    cursor: pointer;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Oswald", serif;
+    padding-top: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 6.5vw;
+    background: #000;
+    z-index: 10;
+}
+
+
+
+#loader h3 {
+    text-transform: uppercase;
+}
+
+#loader h3 span {
+    display: inline-block;
+}
+
+
+.logo h2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+.logo h2 a span {
+    color: yellow;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5vw;
+    letter-spacing: 0.05em;
+    position: relative;
+    transition: all 0.4s ease-in;
+}
+
+.nav-items li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.4s ease;
+    color: yellow;
+}
+
+.nav-items li a:hover::after {
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.nav-items li a:hover {
+    color: yellow;
+    transition: all 0.3s ease-in;
+}
+
+
+.active-yellow {
+    color: yellow !important;
+    position: relative;
+}
+
+.active-yellow::after {
+    content: '';
+    width: 100% !important;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: yellow;
+}
+
+#hero-part1 {
+    padding-bottom: 7vw;
+    padding-top: 10vw;
+    overflow: hidden;
+}
+
+.content {
+    color: #fff;
+    font-family: "Oswald", serif;
+}
+
+#element {
+    color: yellow;
+}
+
+.content p {
+    width: 80%;
+    color: #fff;
+    font-family: "Playwrite HR Lijeva", serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+
+}
+
+#photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#photo img {
+    width: 60%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    box-shadow: 0px 0px 40px 5px yellow;
+}
+
+.btn-element {
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.btn-element .btn {
+    padding: 0.4rem 0.6rem;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: cyan;
+    cursor: pointer;
+    color: black;
+}
+
+.btn-element .btn:hover {
+    background-color: yellow;
+    box-shadow: 0 0 3rem yellow;
+    transition: all 0.3s;
+    color: black;
+}
+
+#hero-part2 {
+    color: #fff !important;
+    padding: 2vw;
+}
+
+#hero-part3 {
+    color: #fff !important;
+    padding: 3vw 8vw;
+    border-bottom: 1px solid #ffffff61;
+}
+
+#heading-color1 {
+    margin-bottom: 4vw;
+}
+
+.heading-color {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hero-part2 h6 {
+    font-family: "Oswald", serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+#hero-part2 h4 {
+    color: yellow;
+}
+
+#hero-part2 h4 span {
+    color: cyan;
+}
+
+.heading-color span {
+    color: transparent;
+    -webkit-text-stroke: 1px yellow;
+}
+
+.card-items-new {
+    background-color: #000 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    margin-top: 1vw;
+    flex-direction: column;
+    font-family: "Playwrite HR Lijeva", serif !important;
+    border: 2px solid rgba(255, 255, 0, 0.296) !important;
+}
+
+/* .coding-img {
+    border-radius: 60%;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+} */
+
+.card-items-new img {
+    width: 60%;
+    color: #fff;
+    margin-bottom: 1.2vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    border-radius: 60%;
+    background-color: #fff;
+}
+
+.card-items-new h3 {
+    color: yellow !important;
+    font-family: "Oswald", serif;
+}
+
+#cards-padding {
+    padding: 2vw 10vw 0vw 10vw;
+}
+
+.project-card {
+    background-color: #000 !important;
+    display: flex;
+    flex-direction: column;
+    font-family: "Playwrite HR Lijeva", serif !important;
+    border: 2px solid rgba(255, 255, 0, 0.296) !important;
+    box-shadow: 0 0 15px 2px rgb(144, 144, 5);
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.project-card h3 {
+    color: yellow !important;
+    font-family: "Oswald", serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 1vw;
+}
+
+.project-card p {
+    padding: 0 1vw;
+}
+
+#certificate {
+    color: #fff;
+    padding: 3vw 4vw;
+}
+
+.mar {
+    margin: 2.5vw 0;
+}
+
+#certificate h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+#certificate h3 span {
+    color: transparent;
+    -webkit-text-stroke: 2px yellow;
+}
+
+#certificate h5 {
+    font-size: 1.1vw;
+    font-family: "Oswald", serif;
+    text-transform: capitalize;
+}
+
+#certificate h6 {
+    text-transform: capitalize;
+    font-family: "Playwrite HR Lijeva", serif;
+    font-size: 1.4vw;
+}
+
+#certificate h6 span {
+    color: yellow;
+}
+
+.cert-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+    padding: 10px;
+    transition: all 0.3s ease-in;
+    border-radius: 10px;
+}
+
+.cert-card:hover {
+    transition: all 0.3s ease;
+    padding: 1vw;
+}
+
+.cert-card img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.cert-card img:hover {
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 20px 10px cyan;
+}
+
+.cert-card h3 {
+    color: yellow;
+    font-size: 1vw !important;
+    font-family: "Oswald", serif;
+    margin-top: 1vw;
+}
+
+.cert-card p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: "Playwrite HR Lijeva", serif;
+}
+
+.cert-card a {
+    background-color: cyan;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.cert-card a:hover {
+    background-color: yellow;
+    box-shadow: 0 0 3rem yellow;
+    transform: all 0.3s ease;
+    color: #000;
+}
+
+.pro-btn-btn {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 0.1rem 2vw;
+    border: 1px solid white;
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    font-family: "Oswald", serif;
+    color: white;
+    margin-bottom: 1vw;
+    transition: all 0.3s ease-in;
+}
+
+.pro-btn-btn:hover {
+    background-color: yellow;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px 5px yellow;
+    color: black;
+}
+
+#education {
+    color: #fff;
+    padding: 1vw;
+}
+
+.Edutn {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    align-items: center;
+    color: #fff;
+    margin: 3vw 0;
+}
+
+.Edutn .actn {
+    color: transparent;
+    -webkit-text-stroke: 1px cyan;
+}
+
+.Edutn i {
+    color: cyan;
+}
+
+.quality {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    align-items: center;
+    padding: 1vw 0;
+}
+
+.quality {
+    border-bottom: 1px solid #fff;
+}
+
+.quality p {
+    color: cyan;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.quality .year h4 {
+    color: yellow;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    color: #fff;
+}
+
+.footer-text a {
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: yellow;
+}
+
+.icons-symble a {
+    font-size: 3vw;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icons-symble a i:hover {
+    color: yellow;
+}
+
+#last-footer-part1 {
+    flex-direction: column;
+}

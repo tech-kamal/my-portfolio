@@ -1,0 +1,110 @@
+@media screen and (max-width: 768px) {
+    #photo img {
+        width: 100%;
+        margin-top: 3vw;
+    }
+
+    #photo {
+        position: relative;
+        left: 50%;
+        transform: translate(60%, 12px);
+    }
+
+    .nav-items li a {
+        font-size: 2.5vw;
+    }
+
+    .logo h2 a {
+        font-size: 4vw;
+    }
+
+    .content h2 {
+        font-size: 3.5vw;
+    }
+
+    .content h1 {
+        font-size: 5.5vw;
+    }
+
+    .content p {
+        width: 100%;
+    }
+
+    .project-cont {
+        margin-bottom: 3vw;
+    }
+
+    #certificate h3 {
+        font-size: 6vw;
+    }
+
+    #certificate h3 span {
+        color: transparent;
+        -webkit-text-stroke: 1px yellow;
+    }
+
+    #certificate h5 {
+        font-size: 3vw;
+    }
+
+    #certificate h6 {
+        font-size: 4vw;
+    }
+
+    .manu-bar {
+        display: block;
+    }
+
+    #hero-part1 {
+        padding: 15vw 6vw;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .project-card {
+        padding-bottom: 2vw;
+    }
+
+    #education {
+        padding: 3vw 9vw;
+    }
+
+    .university h3 {
+        font-size: 3.4vw;
+    }
+
+    .university h5 {
+        font-size: 3vw;
+    }
+
+    .quality p {
+        font-size: 2.5vw;
+    }
+
+    .quality .year h4 {
+        color: yellow;
+        margin: 0;
+        font-size: 2vw;
+        white-space: nowrap;
+    }
+
+    #certificate h5 {
+        font-size: 4vw;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .footer-text a {
+        padding-top: 15px;
+    }
+
+    .icons-symble a {
+        font-size: 5vw;
+    }
+
+    #loader h3 {
+        font-size: 4vw;
+    }
+}
