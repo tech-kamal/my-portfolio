@@ -495,7 +495,3 @@ html {
 .icons-symble a i:hover {
     color: yellow;
 }
-
-#last-footer-part1 {
-    flex-direction: column;
-}

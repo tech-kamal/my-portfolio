@@ -136,83 +136,83 @@ load.from(".heading-color", {
     stagger: 0.1
 }, "same")
 
-let tl1 = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#cards-padding",
-        scroller: "body",
-        start: "top 50%",
-        end: "top 30%",
-        scrub: 2
-    }
-})
-tl1.from("#left1", {
-    x: -300,
-    duration: 0.8,
-    opacity: 0,
-}, "anime")
-tl1.from("#middle1", {
-    y: 300,
-    duration: 0.8,
-    opacity: 0,
-}, "anime")
-tl1.from("#right1", {
-    x: 300,
-    duration: 0.8,
-    opacity: 0,
-}, "anime")
+// let tl1 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: "#cards-padding",
+//         scroller: "body",
+//         start: "top 50%",
+//         end: "top 30%",
+//         scrub: 2
+//     }
+// })
+// tl1.from("#left1", {
+//     x: -300,
+//     duration: 0.8,
+//     opacity: 0,
+// }, "anime")
+// tl1.from("#middle1", {
+//     y: 300,
+//     duration: 0.8,
+//     opacity: 0,
+// }, "anime")
+// tl1.from("#right1", {
+//     x: 300,
+//     duration: 0.8,
+//     opacity: 0,
+// }, "anime")
 
 
-let tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#middle-part",
-        scroller: "body",
-        start: "top 70%",
-        end: "top 50%",
-        scrub: 2
-    }
-})
+// let tl2 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: "#middle-part",
+//         scroller: "body",
+//         start: "top 70%",
+//         end: "top 50%",
+//         scrub: 2
+//     }
+// })
 
-tl2.from("#left2", {
-    x: -300,
-    duration: 0.8,
-    opacity: 0,
-}, "anime1")
-tl2.from("#middle2", {
-    y: 300,
-    duration: 0.8,
-    opacity: 0,
-}, "anime1")
-tl2.from("#right2", {
-    x: 300,
-    duration: 0.8,
-    opacity: 0,
-}, "anime1")
+// tl2.from("#left2", {
+//     x: -300,
+//     duration: 0.8,
+//     opacity: 0,
+// }, "anime1")
+// tl2.from("#middle2", {
+//     y: 300,
+//     duration: 0.8,
+//     opacity: 0,
+// }, "anime1")
+// tl2.from("#right2", {
+//     x: 300,
+//     duration: 0.8,
+//     opacity: 0,
+// }, "anime1")
 
 
-let tl3 = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#latest-pro",
-        scroller: "body",
-        start: "top 70%",
-        end: "top 30%",
-        scrub: 2
-    }
-})
-tl3.from("#one-side", {
-    x: 300,
-    duration: 0.8,
-    opacity: 0,
-}, "anime2")
-tl3.from("#mid-side", {
-    y: 300,
-    duration: 0.8,
-    opacity: 0,
-}, "anime2")
-tl3.from("#two-side", {
-    x: -300,
-    duration: 0.8,
-    opacity: 0,
-}, "anime2")
+// let tl3 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: "#latest-pro",
+//         scroller: "body",
+//         start: "top 70%",
+//         end: "top 30%",
+//         scrub: 2
+//     }
+// })
+// tl3.from("#one-side", {
+//     x: 300,
+//     duration: 0.8,
+//     opacity: 0,
+// }, "anime2")
+// tl3.from("#mid-side", {
+//     y: 300,
+//     duration: 0.8,
+//     opacity: 0,
+// }, "anime2")
+// tl3.from("#two-side", {
+//     x: -300,
+//     duration: 0.8,
+//     opacity: 0,
+// }, "anime2")
 
 
 
@@ -223,7 +223,6 @@ let footerAnime = gsap.timeline({
         scroller: "body",
         start: "top 90%",
         end: "top 75%",
-        scrub: 2
     }
 })
 

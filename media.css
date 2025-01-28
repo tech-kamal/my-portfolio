@@ -1,7 +1,15 @@
 @media screen and (max-width: 768px) {
     #photo img {
-        width: 100%;
-        margin-top: 3vw;
+        width: 220%;
+        margin-top: 10vw;
+    }
+
+    #nav {
+        padding: 3vw;
+    }
+
+    #cards-padding {
+        padding: 2vw 3vw 0vw 3vw;
     }
 
     #photo {
@@ -15,7 +23,7 @@
     }
 
     .logo h2 a {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
     .content h2 {
@@ -51,12 +59,16 @@
         font-size: 4vw;
     }
 
+    #hero-part3 {
+        padding: 15vw 8vw;
+    }
+
     .manu-bar {
         display: block;
     }
 
     #hero-part1 {
-        padding: 15vw 6vw;
+        padding: 20vw 6vw;
     }
 
     .nav-items {
@@ -106,5 +118,9 @@
 
     #loader h3 {
         font-size: 4vw;
+    }
+
+    #last-footer-part1 {
+        flex-direction: column;
     }
 }
